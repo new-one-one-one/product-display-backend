@@ -4,9 +4,17 @@
   "description": "node.js based server for Fetching & Storing the user selections for products list",
   "main": "index.js",
   "scripts": {
-    "test": "npm run test",
-    "start": "nodemon --exec ts-node src/index.ts"
+    "start": "nodemon --exec ts-node src/index.ts",
+    "build": "rimraf dist && tsc",
+    "ts.check": "tsc --project tsconfig.json",
+    "add-build": "git add dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "pre-commit": [
+      "ts.check",
+      "build",
+      "add-build"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/new-one-one-one/product-display.git"
