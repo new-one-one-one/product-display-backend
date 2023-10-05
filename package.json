@@ -1,0 +1,40 @@
+{
+  "name": "products-server",
+  "version": "1.0.0",
+  "description": "node.js based server for Fetching & Storing the user selections for products list",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test",
+    "start": "nodemon --exec ts-node src/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/new-one-one-one/product-display.git"
+  },
+  "keywords": [
+    "[\"products\"",
+    "\"products-data\"",
+    "\"backend\"",
+    "\"products-listing\"",
+    "\"products-purchases\"]"
+  ],
+  "author": "ohri.piyush0190@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/new-one-one-one/product-display/issues"
+  },
+  "homepage": "https://github.com/new-one-one-one/product-display#readme",
+  "devDependencies": {
+    "@types/express": "^4.17.18",
+    "express": "^4.18.2",
+    "nodemon": "^3.0.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "expess": "^0.0.1-security"
+  }
+}
